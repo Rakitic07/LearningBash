@@ -1,11 +1,11 @@
-#if grep -E "Abhilash|Raktim" "$File";
-#if grep "Abhilash" "$File" | grep "Raktim"
+#if grep -E "Sukanta|Subbu" "$File";
+#if grep "Sukanta" "$File" | grep "Subbu"
 
 
-#if grep -w "Abhilash\|Raktim" "$File"          --Find text inside a file.
+#if grep -w "Sukanta\|Subbu" "$File"          --Find text inside a file.
 
 File=search
-res=$(grep -Rl "Abhilash\|Raktim" .)
+res=$(grep -Rl "Sukanta\|Subbu" .)
 echo "The matched strings were found in these Files: "  $res
 #else
 #echo "Not found"
